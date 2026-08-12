@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research projects and publications by Guanhong Chen in robotics, adaptive control, and continuum-robot sensing.">
+  <title>Research | Guanhong Chen</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav-shell" aria-label="Primary navigation"><a class="brand" href="../"><span class="brand-mark">GC</span><span>Guanhong Chen</span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-links">Menu</button><ul class="nav-links" id="primary-links"><li><a href="../">Home</a></li><li><a href="./" aria-current="page">Research</a></li><li><a href="../cv/">CV</a></li><li><a href="../blog/">Blog</a></li><li><a href="mailto:chengh89@mail2.sysu.edu.cn">Contact</a></li></ul></nav></header>
+  <main id="main">
+    <section class="container page-hero"><p class="eyebrow">Research</p><h1>Intelligent control, grounded in physical systems.</h1><p>My work combines adaptive learning, constrained optimization, magnetic sensing, and experimental robotics to make complex manipulators more accurate and safer.</p></section>
+
+    <section class="section" id="surgical-robot">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">Undergraduate thesis</p><h2>Location-aware rigid-flexible coupled robot</h2></div><p class="section-intro">Event-triggered predefined-time adaptive control for a surgical robot under model uncertainty and safety constraints.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-date">System</div><div><h3>Integrated surgical robotics prototype</h3><p>A rigid-flexible platform combining a Franka Emika Panda manipulator, a two-DoF continuum segment, Hall-IMU sensing, and a laser emitter for simulated minimally invasive ablation.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">Method</div><div><h3>Adaptive estimation and safe optimization</h3><p>An event-triggered RBF neural network estimates the continuum Jacobian online. A constrained quadratic program enforces remote-center-of-motion and joint-limit constraints, solved in real time by a predefined-time, noise-tolerant Dini-RNN.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">Result</div><div><h3>Sub-millimeter localization</h3><p>After calibration, continuum-tip localization achieved a 0.02 mm mean absolute error and 0.45 mm maximum error. Physical experiments maintained both trajectory-tracking and RCM errors below 2 mm. The work was nominated for Outstanding Undergraduate Thesis at Sun Yat-sen University (Top 5%).</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="model-free">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow">Comparative study</p><h2>Model-free kinematic control</h2></div><p class="section-intro">A controlled comparison of RBFNN, zeroing neural dynamics, and gradient neural dynamics for online Jacobian estimation and trajectory tracking.</p></div><div class="card-grid"><article class="card"><span class="card-number">Theory</span><h3>Convergence analysis</h3><p>Finite-time Lyapunov arguments, adaptive RBF weight updates, and error-coupling terms improve convergence under kinematic uncertainty.</p></article><article class="card"><span class="card-number">Simulation</span><h3>Matched conditions</h3><p>Controllers were evaluated in MATLAB and CoppeliaSim for tracking accuracy, convergence, sensing-noise robustness, and computation time.</p></article><article class="card"><span class="card-number">Hardware</span><h3>1 kHz deployment</h3><p>All three controllers were implemented in C++/ROS on a seven-DoF Franka Emika Panda at a 1 kHz control frequency.</p></article></div></div>
+    </section>
+
+    <section class="section" id="simulation">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow">Independent study · 2025</p><h2>Simulation, graphics, and manipulation</h2></div><p class="section-intro">Self-directed projects extended my work from robot control into physics-based simulation and learned manipulation.</p></div><div class="timeline"><article class="timeline-item"><div class="timeline-date">MAPLE · ICRA 2022</div><div><h3>Independent pipeline reproduction</h3><p>Implemented eight parameterized behavior primitives for six-DoF manipulation and evaluated the reproduced MAPLE system against a SAC baseline on object-assembly tasks.</p></div></article><article class="timeline-item"><div class="timeline-date">Mar–Sep 2025</div><div><h3>Physics-based simulation and graphics</h3><p>Studied numerical integration, physical simulation, shader programming, and dynamics using NUS HCRL materials, DreamWorks Animation resources, and graphics-course exercises. Reproduced small-scale cloth-simulation experiments to examine numerical stability, plausibility, and visual realism.</p></div></article></div></div>
+    </section>
+
+    <section class="section">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow">Research output</p><h2>Publications & patent</h2></div><p class="section-intro">Status and wording below follow the current CV dated 2026.</p></div><div class="publication-list"><article class="publication"><span class="publication-type">Journal manuscript · Submitted</span><h3>Event-Triggered Predefined-Time Adaptive Control of a Location-Aware Rigid-Flexible Coupled Robot Under Model Uncertainties and Safety Constraints</h3><p>First author. Submitted to <em>IEEE Transactions on Cybernetics</em>, June 2026.</p></article><article class="publication"><span class="publication-type">Conference · Oral presentation</span><h3>Comparative Study of Model-Free Kinematic Control Strategies for Robotic Manipulators</h3><p>G. Chen, W. Li, and Y. Li. IWACIII 2025, July 2025.</p></article><article class="publication"><span class="publication-type">Chinese invention patent application</span><h3>A Continuum Robot and Its Shape-Sensing Method</h3><p>Applicant: Sun Yat-sen University. Inventor (3rd of 5). CNIPA Application No. 202510933703.8; accepted July 8, 2025.</p></article></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© <span data-year></span> Guanhong Chen</span><a href="../assets/Guanhong_Chen_CV.pdf">Full CV (PDF)</a></div></footer>
+  <script src="../assets/main.js"></script>
+</body>
+</html>
