@@ -796,18 +796,15 @@ h3 {
   text-align: center;
 }
 
-.home-portrait-placeholder {
-  display: grid;
+.home-portrait img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  place-items: center;
+  aspect-ratio: 3 / 4;
   border: 1px solid #cbd0d4;
   border-radius: 3px;
   background: #f0f1f2;
-  color: #6f7c86;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3.8rem;
-  letter-spacing: -0.08em;
+  object-fit: cover;
+  object-position: 50% 42%;
 }
 
 .home-portrait p {
