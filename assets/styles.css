@@ -727,3 +727,285 @@ h3 {
     box-shadow: none;
   }
 }
+
+/* Home page: restrained academic profile */
+.home-page {
+  background: #fafafa;
+  color: #202326;
+}
+
+.home-page .site-header {
+  background: rgba(250, 250, 250, 0.96);
+  backdrop-filter: blur(10px);
+}
+
+.home-page .brand-mark {
+  border-radius: 4px;
+  background: #263f56;
+}
+
+.home-page .nav-links a {
+  border-radius: 4px;
+}
+
+.home-page .nav-links a:hover,
+.home-page .nav-links a[aria-current="page"] {
+  background: #e9edf0;
+  color: #1e3b55;
+}
+
+.home-resume {
+  max-width: 980px;
+}
+
+.home-intro {
+  padding: 6.5rem 0 5rem;
+}
+
+.home-identity {
+  max-width: 760px;
+}
+
+.home-page .eyebrow {
+  margin-bottom: 0.7rem;
+  color: #536a7c;
+  font-size: 0.75rem;
+  letter-spacing: 0.11em;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.home-page h1 {
+  margin-bottom: 0.4rem;
+  color: #182735;
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-weight: 700;
+}
+
+.home-page h2 {
+  margin-bottom: 0;
+  color: #243746;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+}
+
+.home-page h3 {
+  color: #26333d;
+  font-size: 1.08rem;
+  font-weight: 720;
+  letter-spacing: -0.01em;
+}
+
+.home-role {
+  margin: 0 0 1.5rem;
+  color: #59636b;
+  font-size: 1.08rem;
+}
+
+.home-summary {
+  max-width: 720px;
+  margin: 0;
+  color: #434b52;
+  font-size: 1.13rem;
+}
+
+.home-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.4rem;
+  margin-top: 1.5rem;
+  color: #626b72;
+  font-size: 0.94rem;
+}
+
+.home-contact a,
+.home-page a {
+  color: #24577d;
+}
+
+.home-page .button {
+  min-height: 42px;
+  border-color: #263f56;
+  border-radius: 4px;
+  background: #263f56;
+  color: white;
+}
+
+.home-page .button:hover {
+  background: #172c3e;
+  color: white;
+}
+
+.home-page .button.secondary {
+  background: transparent;
+  color: #263f56;
+}
+
+.home-section {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: 4.2rem 0;
+  border-top: 1px solid #d9dde0;
+}
+
+.home-section-title > p:last-child {
+  margin-top: 0.9rem;
+  color: #737a80;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.home-section-content > :first-child {
+  margin-top: 0;
+}
+
+.home-section-content > :last-child {
+  margin-bottom: 0;
+}
+
+.home-entry-heading {
+  display: flex;
+  gap: 1.5rem;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.home-entry-heading h3,
+.home-entry-heading p {
+  margin: 0;
+}
+
+.home-entry-heading p {
+  margin-top: 0.25rem;
+  color: #636b71;
+}
+
+.home-entry-heading time,
+.achievement-list time {
+  flex: 0 0 auto;
+  color: #747c82;
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.simple-list {
+  margin: 1.3rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.simple-list li + li {
+  margin-top: 0.3rem;
+}
+
+.home-experience + .home-experience {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e3e5;
+}
+
+.home-experience h3,
+.home-experience p {
+  margin-top: 0;
+}
+
+.home-experience p {
+  color: #4d555b;
+}
+
+.home-result {
+  padding-left: 1rem;
+  border-left: 3px solid #8298a9;
+  font-size: 0.94rem;
+}
+
+.achievement-group + .achievement-group {
+  margin-top: 3rem;
+}
+
+.achievement-list {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.achievement-list li {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e0e3e5;
+}
+
+.achievement-list strong,
+.achievement-list span {
+  display: block;
+}
+
+.achievement-list strong {
+  margin-bottom: 0.2rem;
+  color: #2c363e;
+}
+
+.achievement-list span {
+  color: #5a6268;
+  font-size: 0.94rem;
+}
+
+.home-links {
+  display: grid;
+}
+
+.home-links a {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e0e3e5;
+  text-decoration: none;
+}
+
+.home-links a:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.home-links strong {
+  color: #263f56;
+}
+
+.home-links span {
+  color: #626a70;
+}
+
+.home-closing {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 720px) {
+  .home-intro {
+    padding: 4.5rem 0 3.5rem;
+  }
+
+  .home-section {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 3.5rem 0;
+  }
+
+  .home-entry-heading {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .home-links a {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
