@@ -755,15 +755,71 @@ h3 {
 }
 
 .home-resume {
-  max-width: 980px;
+  width: 100%;
 }
 
 .home-intro {
-  padding: 6.5rem 0 5rem;
+  display: flex;
+  min-height: calc(100svh - 74px);
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.home-band {
+  scroll-margin-top: 74px;
+  scroll-snap-align: start;
+  border-top: 1px solid #d9dde0;
+}
+
+.home-intro.home-band {
+  border-top: 0;
+}
+
+.home-band:nth-child(even) {
+  background: #f3f5f6;
+}
+
+.home-intro-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+  max-width: 980px;
 }
 
 .home-identity {
   max-width: 760px;
+}
+
+.home-portrait {
+  margin: 0;
+  text-align: center;
+}
+
+.home-portrait-placeholder {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  place-items: center;
+  border: 1px solid #cbd0d4;
+  border-radius: 3px;
+  background: #f0f1f2;
+  color: #6f7c86;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.8rem;
+  letter-spacing: -0.08em;
+}
+
+.home-portrait p {
+  margin: 1rem 0 0.1rem;
+  color: #26333d;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.home-portrait span {
+  color: #737b81;
+  font-size: 0.82rem;
 }
 
 .home-page .eyebrow {
@@ -847,11 +903,17 @@ h3 {
 }
 
 .home-section {
+  display: flex;
+  min-height: calc(100svh - 74px);
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.home-section-inner {
   display: grid;
   grid-template-columns: 250px minmax(0, 1fr);
   gap: clamp(2rem, 6vw, 5rem);
-  padding: 4.2rem 0;
-  border-top: 1px solid #d9dde0;
+  max-width: 980px;
 }
 
 .home-section-title > p:last-child {
@@ -985,18 +1047,37 @@ h3 {
 }
 
 .home-closing {
-  padding-bottom: 2rem;
+  min-height: 62vh;
 }
 
 @media (max-width: 720px) {
   .home-intro {
-    padding: 4.5rem 0 3.5rem;
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+
+  .home-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .home-portrait {
+    width: min(68vw, 250px);
+  }
+
+  .home-portrait p,
+  .home-portrait span {
+    text-align: left;
   }
 
   .home-section {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+
+  .home-section-inner {
     grid-template-columns: 1fr;
     gap: 1.8rem;
-    padding: 3.5rem 0;
   }
 
   .home-entry-heading {
